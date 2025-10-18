@@ -14,19 +14,20 @@ html {
 }
 
 /* HEADER (INTRO SECTION) */
+/* HEADER (INTRO SECTION) */
 header {
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 120px 20px 80px;
   background: #f0f7ff;
 }
 
 header img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -35,17 +36,18 @@ header img:hover {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #1a73e8;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #555;
-  max-width: 700px;
+  color: #444;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 15px;
+  line-height: 1.9;
+  text-align: center;
 }
 
 /* SECTION HEADINGS */
