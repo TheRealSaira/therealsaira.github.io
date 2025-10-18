@@ -1,0 +1,171 @@
+/* GENERAL STYLE */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER (INTRO SECTION) */
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: #f0f7ff;
+}
+
+header img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+  text-align: center;
+  color: #1a73e8;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* THINGS I LOVE SECTION */
+#hobbies {
+  background: #fff8f0;
+  padding: 70px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* MY WORLD SECTION */
+#gallery {
+  padding: 70px 20px;
+  background: #f0f7ff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.gallery-grid img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
+  background: #f9fbff;
+  font-size: 1rem;
+}
+
+/* ANIMATION SPARKLE */
+body::after {
+  content: "✨";
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  header img {
+    width: 140px;
+    height: 140px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .gallery-grid img {
+    width: 130px;
+    height: 130px;
+  }
+  }
